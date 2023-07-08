@@ -22,9 +22,10 @@ function playRound(playerAnswer,computerSelection) {
 
     if (playerAnswer === 'rock') {
         if (playerAnswer === computerSelection) {
-          console.log('Tie. Try me again!'); 
+          console.log("Tie. Try me again!"); 
           playerScore = playerScore + 1;
           computerScore = computerScore + 1;
+
         }
         else if (computerSelection === 'paper') {
           console.log('Player loss. Better luck next time.');
@@ -73,8 +74,6 @@ function playRound(playerAnswer,computerSelection) {
 
 // game function plays 5 rounds and declares winner.
 function game() {
- // prompt('game function initialization check 1. ');
- // getComputerChoice();
  for (let i = 0; i < 5; i++) {
   let computerSelection = getComputerChoice();
   let playerAnswer = prompt('Rock, Paper, Scissors?').toLowerCase();
@@ -104,20 +103,4 @@ game();
 
 
 
-
-// let playerSelection = playerAnswer.toLowerCase();
-
-
-//let computerSelection = getComputerChoice();
-//let playerAnswer = prompt('Rock, Paper, Sciiiissors?')
-//playRound(playerAnswer,computerSelection);
-//round = round + 1;
-
-//prompt(`end of round 1 check. Player: ${playerScore} and Computer ${computerScore}`);
-
-
-
-    
-
-    
   
