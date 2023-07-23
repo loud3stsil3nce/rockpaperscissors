@@ -3,10 +3,32 @@
     <head>
         <meta charset="UTF-8">
         <title>Rock, Paper, Scissors!</title>
-        <script src="script.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="styles.css">
 
     </head>
     <body>
+        <div class="headerContainer">
+            <h1 id="gameHeading">ROCK PAPER SCISSORS!</h1>
+        </div>
+        
+        <div class="buttonContainer">
+        
+            <button class="btn" id="button1">ROCK</button>
+            <button class="btn" id="button2">PAPER</button>
+            <button class="btn" id="button3">SCISSORS</button>
+                
+        </div>
+        
+        <div id="scoreboard">
+            <div class="scoreboardName" id="p1">PLAYER ONE</div>
+            <div class="scoreboardName" id="comp">PLAYER TWO</div>
+            <div class="scoreboardScore" id="playerOneScore">0</div>
+            <div class="scoreboardScore" id="playerTwoScore">0</div>
+        </div>
+        
 
+            
     </body>
+    <script src="script.js"></script>
 </html>

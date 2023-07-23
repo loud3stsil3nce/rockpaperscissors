@@ -3,6 +3,16 @@ let round = 0
 let computerScore = 0
 let playerScore = 0
 
+
+
+
+
+
+
+
+
+
+
 // getComputerChoice function gets the computer's choice to use later on
  function getComputerChoice() {
     const randomNumber = (Math.floor(Math.random() * 3))
@@ -74,11 +84,11 @@ function playRound(playerAnswer,computerSelection) {
 
 // game function plays 5 rounds and declares winner.
 function game() {
- for (let i = 0; i < 5; i++) {
+ //for (let i = 0; i < 5; i++) {
   let computerSelection = getComputerChoice();
   let playerAnswer = prompt('Rock, Paper, Scissors?').toLowerCase();
   playRound(playerAnswer,computerSelection);
- }
+ //}
  
   if (playerScore > computerScore) {
     prompt(`Player has won! Their score is: ${playerScore}. Computer has ${computerScore} points.`);
@@ -94,7 +104,41 @@ function game() {
   }
 }
 
-game();
+
+
+const rockButton = document.querySelector('#button1');
+const paperButton = document.querySelector('#button2');
+const scissorsButton = document.querySelector('#button3');
+
+
+
+rockButton.addEventListener('click', () => {
+  let computerSelection = getComputerChoice();
+  let playerAnswer = "rock";
+  playRound(playerAnswer, computerSelection);
+})
+
+paperButton.addEventListener('click', () => {
+  let computerSelection = getComputerChoice();
+  let playerAnswer = "paper";
+  playRound(playerAnswer, computerSelection);
+})
+
+scissorsButton.addEventListener('click', () => {
+  let computerSelection = getComputerChoice();
+  let playerAnswer = "scissor";
+  playRound(playerAnswer, computerSelection);
+})
+
+
+
+
+
+
+//game();
+
+// git merge develop
+
 
 
 
