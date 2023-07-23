@@ -14,6 +14,7 @@
     text-align: center;
 }
 
+
 .gameHeading {
     
     justify-content: center;
@@ -25,14 +26,21 @@
 
 }
 
+
+.gameInquiry {
+    height:  50px;
+    width: 100%;
+
+}
+
 .buttonContainer {
     background-color:coral;
-    margin-top: 30vh;
+    margin-top: 10vh;
     display: flex;
     height: 20vh;
     justify-content: center;
     align-content: center;
-    align-self: center;
+    
 
 }
 
@@ -50,4 +58,33 @@
     text-align: center;
     display:grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 3px;
 }
+
+#scoreboard :nth-child(1),
+#scoreboard :nth-child(3) {
+    border-right-color:black;
+    border-right-style: solid;
+    
+}
+#scoreboard :nth-child(2),
+#scoreboard :nth-child(4) {
+    border-left-color:black;
+    border-left-style: solid;
+    
+}
+
+#scoreboard :nth-child(1),
+#scoreboard :nth-child(2) {
+    border-bottom-color:black;
+    border-bottom-style: solid;
+    
+}
+#scoreboard div {
+    padding: 10px;
+    border-radius: 10px;
+}
+
