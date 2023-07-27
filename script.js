@@ -5,13 +5,7 @@ let playerScore = 0
 
 
 
-
-
-
-
-
-
-
+// trouble code:
 
 
 
@@ -93,8 +87,23 @@ Winner.textContent = "Shall the best (luckiest) player win.";
 
 };
 
+
+playerChose.textContent = `${playerAnswer}`;
+compChose.textContent = `${computerSelection}`;
 } //end of playRound function
 
+
+const statusBox = document.querySelector('.statContainer');
+const vs = document.querySelector('.vs');
+const playerChose = document.querySelector('.playerChose');
+const compChose = document.querySelector('.compChose');
+
+
+//const playerChose = document.createElement('p');
+//const compChose = document.createElement('p');
+
+//statusBox.insertBefore(playerChose, vs)
+//statusBox.appendChild(compChose);
 
 
 const rockButton = document.querySelector('#button1');
@@ -165,4 +174,3 @@ function game() {
  }
  
 
-  
