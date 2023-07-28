@@ -90,6 +90,10 @@ Winner.textContent = "Shall the best (luckiest) player win.";
 
 playerChose.textContent = `${playerAnswer}`;
 compChose.textContent = `${computerSelection}`;
+
+if (playerScore === 5 | computerScore ===5) {
+  gameWinner(playerScore, computerScore);
+} 
 } //end of playRound function
 
 
@@ -137,7 +141,13 @@ scissorsButton.addEventListener('click', () => {
 
 
 
-
+function gameWinner(playerScore , computerScore) {
+  if (playerScore === 5 || computerScore === 5) {
+    console.log("Someone won!");
+  } else {
+    console.log("no one won...");
+  }
+}
 
 
 
