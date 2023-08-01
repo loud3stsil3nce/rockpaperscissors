@@ -15,6 +15,9 @@ function resetGame() { // function is supposed to reset the game values and disp
   console.log(computerScore);
   pScore.textContent = playerScore;
   cScore.textContent = computerScore;
+  playerChose.textContent = ``;
+  compChose.textContent = ``;
+
 }
 
 // getComputerChoice function gets the computer's choice to use later on
