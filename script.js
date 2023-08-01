@@ -5,12 +5,12 @@ let playerScore = 0
 
 const resetButton = document.querySelector('.startButton');
 resetButton.addEventListener('click', () => {
-resetGame(playerScore, computerScore);
+resetGame();
 })
 
-function resetGame(playerScore, computerScore) {
-  playerScore = 0
-  computerScore = 0
+function resetGame() { // function is supposed to reset the game values and display 0-0 as scores.
+  playerScore -= playerScore;
+  computerScore -= computerScore;
   console.log(playerScore);
   console.log(computerScore);
   pScore.textContent = playerScore;
